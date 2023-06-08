@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package caso.práctico01;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Mariana Ulate
+ */
+public class CasoPráctico01 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double total=0;
+        
+        String empleadosInfo = JOptionPane.showInputDialog("Digite la cantidad de empleados: ");
+        int empleados= Integer.parseInt(empleadosInfo);
+        
+        for(int i=1;i<=empleados;i++){
+            String salariosInfo = (JOptionPane.showInputDialog("Digite el salario del usuario: "));
+            int salarios = Integer.parseInt(salariosInfo);
+            Double SEM= salarios*0.0925;
+            Doble IVM= salarios*0.0508;
+            
+            salarioT+= SEM+IVM;
+        
+        }
+        JOptionPane.showMessageDialog(parentcomponent:null,"Total de empleados" + empleados + "El salario total es de: " + salarioT);
+}
